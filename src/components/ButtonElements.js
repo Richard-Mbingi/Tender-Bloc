@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
+//TODO: Button arrow orientation
 export const Button = styled(Link)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
