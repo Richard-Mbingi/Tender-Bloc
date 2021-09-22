@@ -1,4 +1,7 @@
+//TODO: Fix footer grid layout
+
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FaFacebook,
   FaInstagram,
@@ -23,6 +26,10 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -61,7 +68,7 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">TenderBloc</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>TenderBloc</SocialLogo>
             <WebsightRights>
               tenderbloc @ {new Date().getFullYear()}
               All rights reserved.

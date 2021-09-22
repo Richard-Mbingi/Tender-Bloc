@@ -1,3 +1,5 @@
+//TODO: Replace images
+
 import React from "react";
 import Icon1 from '../../images/svg-1.svg'
 import Icon2 from '../../images/svg-2.svg'

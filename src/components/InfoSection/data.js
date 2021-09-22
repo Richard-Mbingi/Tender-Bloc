@@ -1,4 +1,6 @@
 //TODO: SVG loading
+//TODO: Replace images
+//TODO: Replace filler text with real info
 
 export const homeObjOne = {
   id: "about",

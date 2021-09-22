@@ -1,3 +1,6 @@
+//TODO: Change hero video
+//TODO: Change button color and fix hover icon
+
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
