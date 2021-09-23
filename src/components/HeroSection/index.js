@@ -25,8 +25,8 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Hero 1</HeroH1>
-        <HeroP>Phrase that makes us all woozy.</HeroP>
+        <HeroH1>Harness the Power of the Many</HeroH1>
+        <HeroP>Unlock the unlimited potential of the Ethereum technology in your Tender Procurement</HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"

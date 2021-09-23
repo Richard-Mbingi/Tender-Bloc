@@ -17,25 +17,25 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>What do we Offer</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2> Excepteur sint occaecat</ServicesH2>
+          <ServicesH2>Security</ServicesH2>
           <ServicesP>
             uis aute irure dolor in reprehenderit in voluptate velit esse cillum
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2> Excepteur sint occaecat</ServicesH2>
+          <ServicesH2>Smart Contracts</ServicesH2>
           <ServicesP>
             uis aute irure dolor in reprehenderit in voluptate velit esse cillum
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2> Excepteur sint occaecat</ServicesH2>
+          <ServicesH2>E-wallet</ServicesH2>
           <ServicesP>
             uis aute irure dolor in reprehenderit in voluptate velit esse cillum
           </ServicesP>

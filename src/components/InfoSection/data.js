@@ -8,7 +8,7 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topline: "Topline",
-  headline: "Sed ut perspiciatis unde omnis iste natus",
+  headline: "Secure, Transparent and Reliable Procurement",
   description:
     "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni",
   buttonLabel: "Get started",
@@ -26,7 +26,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topline: "Topline",
-  headline: "Sed ut perspiciatis unde omnis iste natus",
+  headline: "Easy and Intuitive Web Platform",
   description:
     "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni",
   buttonLabel: "Get started",
@@ -44,7 +44,7 @@ export const homeObjThree = {
   lightText: false,
   lightTextDesc: false,
   topline: "Topline",
-  headline: "Sed ut perspiciatis unde omnis iste natus",
+  headline: "Join Our Countrywide Community of Tenderers ",
   description:
     "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni",
   buttonLabel: "Start Now",
