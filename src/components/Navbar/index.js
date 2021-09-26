@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import { Button } from "../ButtonElements";
 import {
   Nav,
   NavbarContainer,
@@ -95,16 +96,18 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink
+              <Button
                 to="/signin"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
+                primary="true"
+                dark="true"
               >
                 Sign In
-              </NavBtnLink>
+              </Button>
             </NavBtn>
           </NavbarContainer>
         </Nav>
