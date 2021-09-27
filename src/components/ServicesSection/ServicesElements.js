@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: radial-gradient(#1C3452, #2A243D);
 
   @media screen and (max-width: 768px) {
     height: 1300px;
@@ -58,7 +58,8 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
+  font-family: 'Darker Grotesque';
+  font-size: 3.5rem;
   color: #fff;
   margin-bottom: 64px;
 

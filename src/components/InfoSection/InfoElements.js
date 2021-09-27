@@ -29,11 +29,11 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -67,10 +67,11 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
+  font-family: "Darker Grotesque";
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lighText }) => (lighText ? "#F7F8FA" : "#010606")};
+  color: ${({ lighText }) => (lighText ? "#F7F8FA" : "#373a5b")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -82,7 +83,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#373a5b" : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
@@ -99,4 +100,9 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const InfoBg = styled.img`
+  width: 100%;
+  height: 100%;
 `;

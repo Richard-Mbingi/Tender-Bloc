@@ -1,9 +1,10 @@
-//TODO: SVG loading
+//TODO: Images not loading
 //TODO: Replace images
 //TODO: Replace filler text with real info
 
 export const homeObjOne = {
   id: "about",
+  bg: require("../../images/infoBg.png"),
   lightBg: false,
   lightText: true,
   lightTextDesc: true,

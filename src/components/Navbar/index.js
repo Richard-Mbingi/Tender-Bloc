@@ -12,8 +12,11 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink,
+  NavIll
 } from "./NavbarElements";
+import HeroIcon from "../../images/logo.png"
+
+
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -40,6 +43,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
+              <NavIll src = {HeroIcon}/>
               TenderBloc
             </NavLogo>
             <MobileIcon onClick={toggle}>

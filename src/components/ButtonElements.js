@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 //TODO: Button arrow orientation
 export const Button = styled(Link)`
-  border: solid 2px;
+  border: solid 1.25px;
   border-color: ${({primary}) => (primary ? "#ff7e7e" : "#373a5b")};
   border-radius: 5px;
   background: transparent;

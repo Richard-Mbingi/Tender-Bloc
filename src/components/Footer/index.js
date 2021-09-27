@@ -24,6 +24,8 @@ import {
   WebsightRights,
   SocialIcons,
 } from "./FooterElements";
+import { NavIll} from "../Navbar/NavbarElements";
+import HeroIcon from "../../images/logo.png" 
 
 const Footer = () => {
   const toggleHome = () => {
@@ -50,7 +52,10 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>TenderBloc</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              <NavIll src={HeroIcon} />
+              TenderBloc
+            </SocialLogo>
             <WebsightRights>
               tenderbloc @ {new Date().getFullYear()}
               All rights reserved.

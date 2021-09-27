@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 // import Video from "../../videos/video.mp4";
-import Image from "../../images/hero-bg.png";
 import { Button } from "../ButtonElements";
 import {
   HeroContainer,
-  HeroBg,
-  ImageBg,
   // VideoBg,
   HeroContent,
   HeroH1,
@@ -15,6 +12,7 @@ import {
   ArrowRight,
 } from "./HeroElements";
 
+
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -23,10 +21,6 @@ const HeroSection = () => {
   };
   return (
     <HeroContainer>
-      <HeroBg>
-        <ImageBg src={Image}  ></ImageBg>
-        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
-      </HeroBg>
       <HeroContent>
         <HeroH1>Harness the Power of the Many</HeroH1>
         <HeroP>Unlock the unlimited potential of the Ethereum technology in your Tender Procurement</HeroP>
