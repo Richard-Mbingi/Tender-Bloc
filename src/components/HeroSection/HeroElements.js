@@ -2,17 +2,16 @@
 //TODO: Change button color and fix hover icon
 
 import styled from "styled-components";
-import heroImg from '../../images/hero-bg.png'
+import heroImg from "../../images/hero-bg.png";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
-
 
 export const HeroContainer = styled.div`
   background-image: url(${heroImg});
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 1600px;
   position: relative;
   z-index: 1;
 
@@ -55,6 +54,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
+  margin-top: 18%;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -102,6 +102,7 @@ export const HeroP = styled.p`
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
+  margin-bottom: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;

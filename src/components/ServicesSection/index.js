@@ -1,9 +1,9 @@
 //TODO: Replace images
 
 import React from "react";
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-2.svg'
-import Icon3 from '../../images/svg-3.svg'
+import Icon1 from '../../images/protection.png'
+import Icon2 from '../../images/policy.png'
+import Icon3 from '../../images/wallet.png'
 import {
   ServicesContainer,
   ServicesH1,
