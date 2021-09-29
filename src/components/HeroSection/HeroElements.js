@@ -1,5 +1,5 @@
-//TODO: Change hero video
-//TODO: Change button color and fix hover icon
+//TODO: Adjust background
+//TODO: Adjust hero section
 
 import styled from "styled-components";
 import heroImg from "../../images/hero-bg.png";
@@ -7,11 +7,12 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background-image: url(${heroImg});
+  background-position: 0px -50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 30px;
-  height: 1600px;
+  height: 1400px;
   position: relative;
   z-index: 1;
 
@@ -29,6 +30,10 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 1200px;
   }
 `;
 
@@ -102,10 +107,14 @@ export const HeroP = styled.p`
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
-  margin-bottom: 35%;
+  margin-bottom: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 25%;
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
