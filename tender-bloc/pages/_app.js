@@ -1,7 +1,16 @@
-import '../styles/index.css'
+import {MoralisProvider} from "react-moralis"
+import "../styles/index.css";
+//TODO: Fix .env bug
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const appId = 'https://o46jlae5dbpr.moralishost.com:2053/server'
+const serverUrl = 'xAsli0kiHP2isaYWy0KjAh90cWf6zEsXnpqyZ4Qz'
+
+const MyApp = ({ Component, pageProps }) =>{
+  return (
+    <MoralisProvider appId={appId} serverUrl={serverUrl}>
+      <Component {...pageProps} />
+    </MoralisProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

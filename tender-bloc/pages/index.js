@@ -1,8 +1,8 @@
-import Form from "../components/Form";
+import Auth from "../components/Auth";
 
 
 export default function Home() {
   return (
-    <Form />
+    <Auth />
   )
 }
