@@ -5,10 +5,16 @@ const SignUp = () => {
   return (
     <div className="grid grid-cols-2 h-screen">
       <div className="bg-purple-50">
-        <Logo />
-        <h1>Sign Up</h1>
-        <p>I already have an account</p>
-        <Form />
+        <div className="m-8">
+          <Logo />
+          <div className="mx-16 my-10">
+            <h1 className="font-heading text-5xl">Sign Up</h1>
+            <p className="font-body font-extralight underline my-2">
+              I already have an account
+            </p>
+            <Form />
+          </div>
+        </div>
       </div>
       <div className="bg-red-300">
         <p>2</p>

@@ -8,6 +8,10 @@ module.exports = {
         body: ["Source Sans Pro"],
       },
     },
+    textColor: {
+      'primary': '#373a5b',
+      'secondary': '#ff9e9e',
+    }
   },
   variants: {
     extend: {},
