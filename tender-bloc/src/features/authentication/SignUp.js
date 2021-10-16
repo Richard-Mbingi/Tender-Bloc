@@ -4,6 +4,7 @@
 //TODO: Overlay text on background
 //TODO: Already have an account link
 
+import { useMoralis } from "react-moralis";
 import signUpImg from "../../assets/images/sign_up_bg.png";
 
 const signUpBg = {
@@ -11,6 +12,9 @@ const signUpBg = {
 }
 
 const SignUp = () => {
+
+  const {authenticate} = useMoralis()
+
   return (
     <>
       <div className="relative overflow-x-hidden bg-indigo-100">
@@ -52,12 +56,15 @@ const SignUp = () => {
                   <label className="flex" for="">
                     <input className="mr-4 mt-1" type="checkbox" />
                     <span className="text-sm">
-                      By singning up, you agree to our Terms, Data Policy and
+                      By signing up, you agree to our Terms, Data Policy and
                       Cookies.
                     </span>
                   </label>
                   <button className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase">
                     Sign Up
+                  </button>
+                  <button onClick={() => authenticate} className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase">
+                    Authenticate via Metamask
                   </button>
                 </form>
               </div>
