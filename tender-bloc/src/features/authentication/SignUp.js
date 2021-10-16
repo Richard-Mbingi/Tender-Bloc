@@ -1,9 +1,19 @@
-//TODO: Add Image and overlay text
+//TODO: Sign up functionality
+//TODO: Add Company logo
+//TODO: Create sign up form 
+//TODO: Overlay text on background
+//TODO: Already have an account link
+
+import signUpImg from "../../assets/images/sign_up_bg.png";
+
+const signUpBg = {
+  backgroundImage: `url(${signUpImg})`
+}
 
 const SignUp = () => {
   return (
     <>
-      <div className="relative overflow-x-hidden">
+      <div className="relative overflow-x-hidden bg-indigo-100">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-full lg:w-2/6 px-4 mb-12 lg:mb-0">
@@ -22,7 +32,7 @@ const SignUp = () => {
                 <h3 className="mb-8 text-4xl md:text-5xl font-bold font-heading">
                   Signing up is super quick
                 </h3>
-                <p className="mb-10">See you on the other side</p>
+                <p className="mb-10 underline">Already have an account?</p>
                 <form action="">
                   <input
                     className="w-full mb-4 px-12 py-6 border border-gray-200 focus:ring-red-300 focus:border-red-300 rounded-md"
@@ -53,12 +63,15 @@ const SignUp = () => {
               </div>
               <img
                 className="lg:hidden h-96 w-full object-cover"
-                src="../../assets/images/sign_up_bg.png"
-                alt=""
+                src={signUpImg}
+                alt="sign_up"
               />
             </div>
           </div>
         </div>
+        <div
+          className="hidden lg:block lg:absolute top-0 bottom-0 right-0 lg:w-3/6 bg-center bg-cover bg-no-repeat" style={signUpBg}
+        ></div>
       </div>
     </>
   );

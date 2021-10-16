@@ -1,4 +1,4 @@
-import SignUp from "./features/sign-up/SignUp";
+import SignUp from "./features/authentication/SignUp";
 
 
 function App() {
