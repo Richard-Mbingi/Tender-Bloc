@@ -1,9 +1,9 @@
-import SignUp from "./features/authentication/SignUp";
+import Authentication from "./features/authentication/Authentication";
 
 
 function App() {
   return (
-    <SignUp />
+    <Authentication />
   );
 }
 
