@@ -1,6 +1,5 @@
 //TODO: Add Company logo
-//TODO: Create sign up form
-//TODO: Overlay text on background
+//TODO: Liken page to UI design
 //TODO: Already have an account link
 
 import { useState } from "react";

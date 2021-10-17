@@ -1,4 +1,5 @@
 import { useMoralis } from "react-moralis";
+import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
 const Authentication = () => {
@@ -15,7 +16,7 @@ const Authentication = () => {
   }
   return (
     <div>
-      <SignUp />
+      <SignIn />
     </div>
   );
 };

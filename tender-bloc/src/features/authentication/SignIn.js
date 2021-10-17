@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMoralis } from "react-moralis";
 import signUpImg from "../../assets/images/sign_up_bg.png";
 
-const signUpBg = {
+const signInBg = {
   backgroundImage: `url(${signUpImg})`,
 };
 
@@ -10,16 +10,7 @@ const SignIn = () => {
   const { login } = useMoralis();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const { authenticate, isAuthenticated, authError, logout } = useMoralis();
-
-  if (authenticate) {
-    return (
-      <div>
-        <h1>Welcome to TenderBloc</h1>
-        <button onClick={() => logout()}>Log out</button>
-      </div>
-    );
-  }
+  const { authenticate, authError, logout } = useMoralis();
 
   return (
     <>
@@ -46,9 +37,8 @@ const SignIn = () => {
                   />
                 </a>
                 <h3 className="mb-8 text-4xl md:text-5xl font-bold font-heading">
-                  Signing up is super quick
+                  Welcome Back
                 </h3>
-                <p className="mb-10 underline">Already have an account?</p>
                 <div>
                   <input
                     value={email}
@@ -75,7 +65,7 @@ const SignIn = () => {
                     onClick={() => login(email, password)}
                     className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase"
                   >
-                    Sign Up
+                    Sign In
                   </button>
                 </div>
               </div>
@@ -89,7 +79,7 @@ const SignIn = () => {
         </div>
         <div
           className="hidden lg:block lg:absolute top-0 bottom-0 right-0 lg:w-3/6 bg-center bg-cover bg-no-repeat"
-          style={signUpBg}
+          style={signInBg}
         ></div>
       </div>
     </>
