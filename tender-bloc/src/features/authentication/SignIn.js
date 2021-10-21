@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
 import signUpImg from "../../assets/images/sign_up_bg.png";
@@ -10,7 +11,7 @@ const SignIn = () => {
   const { login } = useMoralis();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const { authenticate, authError, logout } = useMoralis();
+  const { authError } = useMoralis();
 
   return (
     <>
@@ -61,6 +62,9 @@ const SignIn = () => {
                       Cookies.
                     </span>
                   </label>
+                  <Link to="/signIn" className="mb-10 underline">
+                    Create an account
+                  </Link>
                   <button
                     onClick={() => login(email, password)}
                     className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase"

@@ -3,19 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import { MoralisProvider } from "react-moralis";
 
-const appId= process.env.REACT_APP_APP_ID
-const serverUrl = process.env.REACT_APP_SERVER_URL
+const appId = process.env.REACT_APP_APP_ID;
+const serverUrl = process.env.REACT_APP_SERVER_URL;
 
 ReactDOM.render(
   <React.StrictMode>
-    <MoralisProvider
-      appId= {appId}
-      serverUrl= {serverUrl}
-    >
-      <App />
-    </MoralisProvider>
+    <BrowserRouter>
+      <MoralisProvider appId={appId} serverUrl={serverUrl}>
+        <App />
+      </MoralisProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
