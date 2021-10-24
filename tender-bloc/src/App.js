@@ -1,4 +1,4 @@
-import Authentication from "./features/authentication/Authentication";
+import Authentication from "./modules/authentication/Authentication";
 
 function App() {
   return (

@@ -7,27 +7,27 @@
   font-family: Darker Grotesque;
   font-weight: 300;
   src: local("Darker Grotesque"),
-    url(./assets/fonts/darker-grotesque/DarkerGrotesque-Light.ttf) format("ttf");
+    url(./global/assets/fonts/darker-grotesque/DarkerGrotesque-Light.ttf) format("ttf");
 }
 @font-face {
   font-family: Darker Grotesque;
   font-weight: 400;
   src: local("Darker Grotesque"),
-    url(./assets/fonts/darker-grotesque/DarkerGrotesque-Regular.ttf)
+    url(./global/assets/fonts/darker-grotesque/DarkerGrotesque-Regular.ttf)
       format("ttf");
 }
 @font-face {
   font-family: Darker Grotesque;
   font-weight: 500;
   src: local("Darker Grotesque"),
-    url(./assets/fonts/darker-grotesque/DarkerGrotesque-Medium.ttf)
+    url(./global/assets/fonts/darker-grotesque/DarkerGrotesque-Medium.ttf)
       format("ttf");
 }
 @font-face {
   font-family: Source Sans Pro;
   font-weight: 500;
   src: local("Source Sans Pro"),
-    url(./assets/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf)
+    url(./global/assets/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf)
       format("ttf");
 }
 
@@ -35,6 +35,6 @@
   font-family: Source Sans Pro;
   font-weight: 500;
   src: local("Source Sans Pro"),
-    url(./assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf)
+    url(./global/assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf)
       format("ttf");
 }

@@ -1,6 +1,6 @@
 import { useMoralis } from "react-moralis";
 import SignIn from "./pages/SignIn";
-import Home from "../dashboard/pages/Home";
+import Home from "../../modules/supplier/pages/Home";
 
 const Authentication = () => {
   const { isAuthenticated} = useMoralis();
