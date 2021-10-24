@@ -8,10 +8,17 @@ module.exports = {
         body: ["Source Sans Pro"],
       },
     },
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#eeeff7",
+      secondary: "#373a5b",
+    }),
     textColor: {
-      'primary': '#373a5b',
-      'secondary': '#ff9e9e',
-    }
+      primary: "#373a5b",
+      secondary: "#ff9e9e",
+      tertiary: "#ffffff",
+      subheading: "#676a8b",
+    },
   },
   variants: {
     extend: {},

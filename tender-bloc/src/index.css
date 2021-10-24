@@ -7,7 +7,8 @@
   font-family: Darker Grotesque;
   font-weight: 300;
   src: local("Darker Grotesque"),
-    url(./global/assets/fonts/darker-grotesque/DarkerGrotesque-Light.ttf) format("ttf");
+    url(./global/assets/fonts/darker-grotesque/DarkerGrotesque-Light.ttf)
+      format("ttf");
 }
 @font-face {
   font-family: Darker Grotesque;
@@ -37,4 +38,11 @@
   src: local("Source Sans Pro"),
     url(./global/assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf)
       format("ttf");
+}
+
+@layer components {
+  .side-bar-tab {
+    @apply pl-9 space-x-3 py-2 flex flex-row items-center
+    hover:bg-red-300 hover:text-primary transition ease-in-out duration-100;
+  }
 }
