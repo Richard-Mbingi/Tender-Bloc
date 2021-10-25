@@ -6,6 +6,7 @@ import Prequalification from "./pages/Prequalification";
 import Compliance from "./pages/Compliance";
 import AssetDisposal from "./pages/AssetDisposal";
 import Settings from "./pages/Settings";
+import { InfoBar } from "./components/InfoBar";
 
 const DashBoard = () => {
   return (
@@ -13,13 +14,13 @@ const DashBoard = () => {
       <div className="col-span-1 col-end-1">
         <SideBar />
       </div>
-      <div className="col-span-3 bg-primary">
+      <div className="col-span-3 bg-primary px-8">
+        <InfoBar />
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/discover" component={Discover} />
           <Route path="/prequalification" component={Prequalification} />
           <Route path="/compliance" component={Compliance} />
-          <Route path="/asset-disposal" component={AssetDisposal} />
           <Route path="/asset-disposal" component={AssetDisposal} />
           <Route path="/settings" component={Settings} />
         </Switch>

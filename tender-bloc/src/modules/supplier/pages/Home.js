@@ -1,8 +1,8 @@
 const Home = () => {
   return (
     <>
-      <body className="">
-        <h1>Home</h1>
+      <body>
+        <h1 className="font-heading text-5xl">Home</h1>
       </body>
     </>
   );
