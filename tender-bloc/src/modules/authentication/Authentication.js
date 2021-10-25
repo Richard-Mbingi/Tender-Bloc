@@ -1,16 +1,16 @@
 import { useMoralis } from "react-moralis";
-import SignIn from "./pages/SignIn";
 import DashBoard from "../supplier/DashBoard";
+import Landing from './pages/Landing';
 
 const Authentication = () => {
-  const { isAuthenticated} = useMoralis();
+  const { isAuthenticated } = useMoralis();
 
   if (isAuthenticated) {
     return <DashBoard />;
   }
   return (
     <div>
-      <SignIn />
+      <Landing />
     </div>
   );
 };

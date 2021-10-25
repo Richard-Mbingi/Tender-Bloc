@@ -2,7 +2,7 @@ import React from 'react'
 
 const AssetDisposal = () => {
      return (
-          <div>
+          <div className="dashboard-label">
                <h1>Asset Disposal</h1>
           </div>
      )

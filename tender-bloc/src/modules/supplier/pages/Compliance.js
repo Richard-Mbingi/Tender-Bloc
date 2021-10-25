@@ -2,7 +2,7 @@ import React from 'react'
 
 const Compliance = () => {
      return (
-          <div>
+          <div className="dashboard-label">
                <h1>Compliance</h1>
           </div>
      )

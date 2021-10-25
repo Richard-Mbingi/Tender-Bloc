@@ -45,4 +45,7 @@
     @apply pl-9 space-x-3 py-2 flex flex-row items-center
     hover:bg-red-300 hover:text-primary transition ease-in-out duration-100;
   }
+  .dashboard-label {
+    @apply font-heading text-5xl
+  }
 }
