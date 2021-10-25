@@ -1,88 +1,117 @@
 import { Link } from "react-router-dom";
+import { RiShieldCheckLine } from "react-icons/ri";
+import { BiReceipt } from "react-icons/bi";
+import { FaEthereum } from "react-icons/fa";
 import Logo from "../../../global/assets/images/logo.png";
 import Illustration from "../../../global/assets/images/illustration.png";
 import Mockup from "../../../global/assets/images/mockup.png";
 
 const Landing = () => {
   return (
-    <>
+    <div className=" text-tertiary px-24 bg-gray-700">
       <div className="bg-gray-600">
-        <div className="px-16 py-8 flex items-center justify-between">
+        <div className="px-16 py-7 flex items-center justify-between">
           <div className="flex flex-row">
             <img className="h-12 pr-4" src={Logo} alt="" />
-            <p className="text-tertiary text-3xl font-heading font-semibold">
-              TenderBloc
-            </p>
+            <p className=" text-3xl font-heading font-semibold">TenderBloc</p>
           </div>
-          <div className="flex flex-row">
-            <div className="">
-              <Link>Home</Link>
-              <Link>Discover</Link>
-              <Link>Contact Us</Link>
-              <button>Sign In</button>
-            </div>
+          <div className="flex flex-row gap-x-8">
+            <Link className="primary-link">Home</Link>
+            <Link className="primary-link">Discover</Link>
+            <Link className="primary-link">Contact Us</Link>
+            <button className="primary-button">Sign In</button>
           </div>
         </div>
-        <div>
-          <h1>Harness the Power of the Many</h1>
-          <p>
-            Unlock the unlimited potential of the Ethereum technology in your
+        <div className="text-center min-h-screen">
+          <h1 className="  text-7xl font-heading mt-12">
+            Harness the Power of <br /> the Many
+          </h1>
+          <p className=" text-3xl font-body font-extralight mt-10">
+            Unlock the unlimited potential of the Ethereum technology in your{" "}
+            <br />
             Tender Procurement
           </p>
-          <button>Sign Up</button>
+          <button className="primary-button mt-36">Sign Up</button>
         </div>
-        <div>
-          <h2>Secure, Transparent and Reliable Procurement</h2>
-          <p>
+        <div className="grid grid-cols-2 items-center min-h-screen">
+          <div>
+            <h2 className="text-5xl font-heading">
+              Secure, Transparent and
+              <br />
+              Reliable Procurement
+            </h2>
+            <p className="text-lg font-body font-light py-10">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+            <button className="primary-button">Send Message</button>
+          </div>
+          <img className="h-68" src={Illustration} alt="" />
+        </div>
+      </div>
+      <div className="grid grid-cols-2 bg-primary items-center min-h-screen">
+        <img src={Mockup} alt="" />
+        <div className="text-primary px-16">
+          <h2 className="text-5xl font-heading">
+            Easy and Intuitive Web Platform
+          </h2>
+          <p className="text-lg font-body font-light py-10">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum.
           </p>
-          <button>Send Message</button>
-          <img src={Illustration} alt="" />
+          <button className="secondary-button">Send Message</button>
         </div>
       </div>
-      <div className="bg-gray-500">
-        <img src={Mockup} alt="" />
-        <h2>Easy and Intuitive Web Platform</h2>
-        <p>
+      <div className="bg-gray-400 min-h-screen py-32 text-center">
+        <h1 className="text-secondary text-5xl font-heading">
+          What do we Offer
+        </h1>
+        <p className="col-span-3 text-lg font-body font-light py-4">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum.
+          nonumy
+          <br /> eirmod tempor
         </p>
-        <button>Send Message</button>
-      </div>
-      <div className="bg-gray-400">
-        <h1>What do we Offer</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor
-        </p>
-        <div>
-          <h3>Security</h3>
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
-            Lorem ipsum dolor sit amet, consetetur sadi
-          </p>
-        </div>
-        <div>
-          <h3>Smart Contracts</h3>
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
-            Lorem ipsum dolor sit amet, consetetur sadi
-          </p>
-        </div>
-        <div>
-          <h3>E-wallet</h3>
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
-            Lorem ipsum dolor sit amet, consetetur sadi
-          </p>
+        <div className="grid grid-cols-3 justify-items-center px-24">
+          <div className="bg-secondary p-7 pb-16 rounded-xl w-64 font-light text-left">
+            <div className="grid grid-cols-2 justify-items-center place-items-center">
+              <h3 className="font-heading text-3xl font-medium pb-2">
+                Security
+              </h3>
+              <RiShieldCheckLine size={32} />
+            </div>
+            <p className="pt-3">
+              Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
+              Lorem ipsum dolor sit amet, consetetur sadi
+            </p>
+          </div>
+          <div className="bg-secondary p-7 pb-16 rounded-xl w-64 font-light text-left">
+            <div className="grid grid-cols-2 justify-items-center place-items-center">
+              <h3 className="font-heading text-3xl font-medium pb-2 leading-6">
+                Smart Contracts
+              </h3>
+              <BiReceipt size={32} />
+            </div>
+            <p className="pt-3">
+              Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
+              Lorem ipsum dolor sit amet, consetetur sadi
+            </p>
+          </div>
+          <div className="bg-secondary p-7 pb-16 rounded-xl w-64 font-light text-left">
+            <div className="grid grid-cols-2 justify-items-center place-items-center">
+              <h3 className="font-heading text-3xl font-medium pb-2">
+                E-wallet
+              </h3>
+              <FaEthereum size={32} />
+            </div>
+            <p className="pt-3">
+              Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam
+              Lorem ipsum dolor sit amet, consetetur sadi
+            </p>
+          </div>
         </div>
       </div>
       <div className="bg-gray-300">
@@ -93,7 +122,7 @@ const Landing = () => {
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
         </p>
-        <button>Send Message</button>
+        <button className="secondary-button">Sign Up</button>
         <form action="" method="post">
           <label>
             Name:
@@ -138,13 +167,11 @@ const Landing = () => {
         </div>
         <div>
           <img className="h-12 pr-4" src={Logo} alt="" />
-          <p className="text-tertiary text-3xl font-heading font-semibold">
-            TenderBloc
-          </p>
+          <p className=" text-3xl font-heading font-semibold">TenderBloc</p>
         </div>
         <div>tenderbloc @ 2021 All rights reserved.</div>
       </div>
-    </>
+    </div>
   );
 };
 export default Landing;

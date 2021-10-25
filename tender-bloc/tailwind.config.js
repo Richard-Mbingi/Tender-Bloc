@@ -12,6 +12,11 @@ module.exports = {
       ...theme("colors"),
       primary: "#eeeff7",
       secondary: "#373a5b",
+      tertiary: "#ff7e7e"
+    }),
+    borderColor: (theme) => ({
+      primary: "#ff7e7e",
+      secondary: "#373a5b",
     }),
     textColor: {
       primary: "#373a5b",
