@@ -15,9 +15,9 @@ export const SideBar = () => {
   const { logout } = useMoralis();
   return (
     <>
-      <div className="bg-secondary flex flex-col lg:w-60 text-tertiary">
-        <div className="flex flex-row border-b border-gray-500 p-5">
-          <img src={logoImg} alt="" className="h-10" />
+      <div className="bg-secondary flex flex-col text-tertiary">
+        <div className="flex flex-row border-b border-gray-500 p-5 pr-10">
+          <img src={logoImg} alt="" className="h-10 pr-2" />
           <p className="self-center font-heading text-2xl font-semibold ">
             TenderBloc
           </p>
@@ -29,32 +29,32 @@ export const SideBar = () => {
           <div className=" h-screen flex flex-col font-body font-light text-lg">
             <div className="side-bar-tab">
               <FiLayout />
-              <Link to="/">Home</Link>
+              <Link to="/home">Home</Link>
             </div>
             <div className="side-bar-tab">
               <FiSearch />
-              <Link to="/">Discover</Link>
+              <Link to="/discover">Discover</Link>
             </div>
             <div className="side-bar-tab">
               <FiFileText />
-              <Link to="/">Prequalification</Link>
+              <Link to="/prequalification">Prequalification</Link>
             </div>
             <div className="side-bar-tab">
               <FiCheckSquare />
-              <Link to="/">Compliance</Link>
+              <Link to="/compliance">Compliance</Link>
             </div>
             <div className="side-bar-tab">
               <FiCreditCard />
-              <Link to="/">Asset Disposal</Link>
+              <Link to="/asset-disposal">Asset Disposal</Link>
             </div>
             <span className="h-60" />
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiSettings />
-              <Link to="/">Settings</Link>
+              <Link to="/settings">Settings</Link>
             </div>
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiLogOut />
-              <Link to="/">Sign Out</Link>
+              <Link to='/sign-out' onClick={() => logout()}>Sign Out</Link>
             </div>
           </div>
         </div>

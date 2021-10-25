@@ -1,10 +1,8 @@
-import { SideBar } from "../components/SideBar";
-
 const Home = () => {
   return (
     <>
-      <body>
-        <SideBar />
+      <body className="">
+        <h1>Home</h1>
       </body>
     </>
   );
