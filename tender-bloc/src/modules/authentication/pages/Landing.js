@@ -26,9 +26,7 @@ const Landing = () => {
             <Link className="primary-link">Discover</Link>
             <Link className="primary-link">Contact Us</Link>
             <Link to="/sign-in">
-              <button className="primary-button">
-                Sign In
-              </button>
+              <button className="primary-button">Sign In</button>
             </Link>
           </div>
         </div>
@@ -43,7 +41,9 @@ const Landing = () => {
             <br />
             Tender Procurement
           </p>
-          <button className="primary-button mt-36">Sign Up</button>
+          <Link to="/sign-up">
+            <button className="primary-button mt-36">Sign Up</button>
+          </Link>
         </div>
 
         {/* Section two*/}
@@ -147,7 +147,9 @@ const Landing = () => {
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum.
           </p>
-          <button className="secondary-button">Sign Up</button>
+          <Link to="/sign-up">
+            <button className="secondary-button">Sign Up</button>
+          </Link>
         </div>
         <form className="flex flex-col" action="" method="post">
           <label className="form-label">

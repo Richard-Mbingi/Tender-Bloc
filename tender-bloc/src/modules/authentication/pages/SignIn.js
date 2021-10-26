@@ -62,7 +62,7 @@ const SignIn = () => {
                       Cookies.
                     </span>
                   </label>
-                  <Link to="/signIn" className="mb-10 underline">
+                  <Link to="/sign-up" className="mb-10 underline">
                     Create an account
                   </Link>
                   <button

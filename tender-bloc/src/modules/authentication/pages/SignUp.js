@@ -44,7 +44,7 @@ const SignUp = () => {
                 <h3 className="mb-8 text-4xl md:text-5xl font-bold font-heading">
                   Signing up is super quick
                 </h3>
-                <Link to="/signIn" className="mb-10 underline">
+                <Link to="/sign-in" className="mb-10 underline">
                   Already have an account?
                 </Link>
                 <div>
