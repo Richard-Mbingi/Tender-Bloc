@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
 import { Link } from "react-router-dom";
-import signUpImg from "../assets/images/sign_up_bg.png";
+import signUpImg from "../../../global/assets/images/sign_up_bg.png";
 
 const signUpBg = {
   backgroundImage: `url(${signUpImg})`,
