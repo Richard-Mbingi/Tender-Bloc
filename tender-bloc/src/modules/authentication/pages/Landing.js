@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { BiReceipt } from "react-icons/bi";
-import { FaEthereum } from "react-icons/fa";
+import {
+  FaEthereum,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 import Logo from "../../../global/assets/images/logo.png";
 import Illustration from "../../../global/assets/images/illustration.png";
 import Mockup from "../../../global/assets/images/mockup.png";
 
 const Landing = () => {
   return (
-    <div className=" text-tertiary px-24 bg-gray-700">
+    <div className=" text-tertiary bg-gray-700">
       <div className="bg-gray-600">
         <div className="px-16 py-7 flex items-center justify-between">
           <div className="flex flex-row">
@@ -22,8 +28,10 @@ const Landing = () => {
             <button className="primary-button">Sign In</button>
           </div>
         </div>
+
+        {/* Section one*/}
         <div className="text-center min-h-screen">
-          <h1 className="  text-7xl font-heading mt-12">
+          <h1 className="text-7xl font-heading mt-12">
             Harness the Power of <br /> the Many
           </h1>
           <p className=" text-3xl font-body font-extralight mt-10">
@@ -33,7 +41,9 @@ const Landing = () => {
           </p>
           <button className="primary-button mt-36">Sign Up</button>
         </div>
-        <div className="grid grid-cols-2 items-center min-h-screen">
+
+        {/* Section two*/}
+        <div className="grid grid-cols-2 items-center min-h-screen px-32">
           <div>
             <h2 className="text-5xl font-heading">
               Secure, Transparent and
@@ -51,7 +61,9 @@ const Landing = () => {
           <img className="h-68" src={Illustration} alt="" />
         </div>
       </div>
-      <div className="grid grid-cols-2 bg-primary items-center min-h-screen">
+
+      {/* Section three*/}
+      <div className="grid grid-cols-2 bg-primary items-center min-h-screen px-32">
         <img src={Mockup} alt="" />
         <div className="text-primary px-16">
           <h2 className="text-5xl font-heading">
@@ -66,7 +78,9 @@ const Landing = () => {
           <button className="secondary-button">Send Message</button>
         </div>
       </div>
-      <div className="bg-gray-400 min-h-screen py-32 text-center">
+
+      {/* Section four*/}
+      <div className="bg-gray-400 min-h-screen p-32 text-center">
         <h1 className="text-secondary text-5xl font-heading">
           What do we Offer
         </h1>
@@ -114,37 +128,48 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-300">
-        <h2>Easy and Intuitive Web Platform</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum.
-        </p>
-        <button className="secondary-button">Sign Up</button>
-        <form action="" method="post">
-          <label>
+
+      {/* Section five*/}
+      <div className="grid grid-cols-2 font-body items-center min-h-screen bg-primary text-primary px-32 justify-items-center">
+        <div>
+          <h2 className="text-5xl font-heading">
+            Join Our Countrywide
+            <br />
+            Community of Tenderers{" "}
+          </h2>
+          <p className="text-lg font-light py-10">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+          <button className="secondary-button">Sign Up</button>
+        </div>
+        <form className="flex flex-col" action="" method="post">
+          <label className="form-label">
             Name:
             <input
+              className="form-input"
               type="text"
               placeholder="John Doe"
               name="form-name"
               id="form-name"
             />
           </label>
-          <label>
+          <label className="form-label">
             Email:
             <input
+              className="form-input"
               type="text"
               placeholder="johndoe@email.com"
               name="form-email"
               id="form-email"
             />
           </label>
-          <label>
+          <label className="form-label">
             Message:
             <input
+              className="form-input"
               type="text"
               placeholder="Share a message"
               name="form-message"
@@ -153,23 +178,41 @@ const Landing = () => {
           </label>
         </form>
       </div>
-      <div className="bg-gray-200">
-        <div>
-          <h2>Service Portals</h2>
-          <Link>Forgot Password</Link>
-          <Link>Admin Portal</Link>
-          <Link>Need Help</Link>
+
+      {/*Footer*/}
+      <div className="bg-secondary grid grid-cols-2 px-32 py-10">
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col">
+            <h2 className="font-heading text-2xl font-semibold text-subtext">
+              Service Portals
+            </h2>
+            <Link className="primary-link">Forgot Password</Link>
+            <Link className="primary-link">Admin Portal</Link>
+            <Link className="primary-link">Need Help</Link>
+          </div>
+          <div className="flex flex-col">
+            <h2 className="font-heading text-2xl font-semibold text-subtext">
+              Terms & Conditions
+            </h2>
+            <Link className="primary-link">Terms of Service</Link>
+            <Link className="primary-link">FAQs</Link>
+          </div>
         </div>
-        <div>
-          <h2>Terms & Conditions</h2>
-          <Link>Terms of Service</Link>
-          <Link>FAQs</Link>
+        <div className="grid justify-items-center">
+          <div className="flex flex-row">
+            <img className="h-10 pr-4" src={Logo} alt="" />
+            <p className="text-3xl font-heading font-semibold">TenderBloc</p>
+          </div>
+          <div className="flex flex-row gap-x-5 py-3">
+            <FaFacebookF size={20} className="hover:text-secondary" />
+            <FaTwitter size={20} className="hover:text-secondary" />
+            <FaLinkedinIn size={20} className="hover:text-secondary" />
+            <FaInstagram size={20} className="hover:text-secondary" />
+          </div>
         </div>
-        <div>
-          <img className="h-12 pr-4" src={Logo} alt="" />
-          <p className=" text-3xl font-heading font-semibold">TenderBloc</p>
+        <div className="font-body text-center col-span-2 py-3">
+          tenderbloc @ 2021 All rights reserved.
         </div>
-        <div>tenderbloc @ 2021 All rights reserved.</div>
       </div>
     </div>
   );

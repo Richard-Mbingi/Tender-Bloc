@@ -46,17 +46,23 @@
     hover:bg-red-300 hover:text-primary transition ease-in-out duration-100;
   }
   .dashboard-label {
-    @apply font-heading text-5xl
+    @apply font-heading text-5xl;
   }
   .primary-link {
-    @apply font-light text-lg text-tertiary font-body hover:text-secondary
+    @apply font-light text-lg text-tertiary font-body hover:text-secondary;
   }
   .primary-button {
     @apply border border-primary rounded-sm px-6 py-2 text-lg text-secondary font-body font-light
-    hover:bg-tertiary hover:text-primary transition ease-in-out
+    hover:bg-tertiary hover:text-primary transition ease-in-out;
   }
   .secondary-button {
     @apply border border-secondary rounded-sm px-6 py-2 text-lg text-primary font-body font-light
-    hover:bg-secondary hover:text-tertiary transition ease-in-out
+    hover:bg-secondary hover:text-tertiary transition ease-in-out;
+  }
+  .form-label {
+    @apply flex flex-col;
+  }
+  .form-input {
+    @apply mt-1 mb-3 py-4 px-4 rounded-md text-primary;
   }
 }

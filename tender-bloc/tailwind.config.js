@@ -12,7 +12,7 @@ module.exports = {
       ...theme("colors"),
       primary: "#eeeff7",
       secondary: "#373a5b",
-      tertiary: "#ff7e7e"
+      tertiary: "#ff7e7e",
     }),
     borderColor: (theme) => ({
       primary: "#ff7e7e",
@@ -23,6 +23,7 @@ module.exports = {
       secondary: "#ff9e9e",
       tertiary: "#ffffff",
       subheading: "#676a8b",
+      subtext: "#86A0C7",
     },
   },
   variants: {
