@@ -8,6 +8,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import Background from "../../../global/assets/images/background.png"
 import Logo from "../../../global/assets/images/logo.png";
 import Illustration from "../../../global/assets/images/illustration.png";
 import Mockup from "../../../global/assets/images/mockup.png";
@@ -15,7 +16,7 @@ import Mockup from "../../../global/assets/images/mockup.png";
 const Landing = () => {
   return (
     <div className=" text-tertiary bg-gray-700">
-      <div className="bg-gray-600">
+      <div className="bg-grad">
         <div className="px-16 py-7 flex items-center justify-between">
           <div className="flex flex-row">
             <img className="h-12 pr-4" src={Logo} alt="" />
@@ -84,7 +85,7 @@ const Landing = () => {
       </div>
 
       {/* Section four*/}
-      <div className="bg-gray-400 min-h-screen p-32 text-center">
+      <div className="bg-grad min-h-screen p-32 text-center">
         <h1 className="text-secondary text-5xl font-heading">
           What do we Offer
         </h1>
@@ -186,7 +187,7 @@ const Landing = () => {
       </div>
 
       {/*Footer*/}
-      <div className="bg-secondary grid grid-cols-2 px-32 py-10">
+      <div className="bg-grad grid grid-cols-2 px-32 py-10">
         <div className="grid grid-cols-2">
           <div className="flex flex-col">
             <h2 className="font-heading text-2xl font-semibold text-subtext">

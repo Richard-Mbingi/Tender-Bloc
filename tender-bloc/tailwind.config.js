@@ -8,16 +8,25 @@ module.exports = {
         body: ["Source Sans Pro"],
       },
     },
+
     backgroundColor: (theme) => ({
       ...theme("colors"),
       primary: "#eeeff7",
       secondary: "#373a5b",
       tertiary: "#ff7e7e",
     }),
+
     borderColor: (theme) => ({
       primary: "#ff7e7e",
       secondary: "#373a5b",
     }),
+
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      gradstart: "#1C3452",
+      gradend: "#2A243D",
+    }),
+
     textColor: {
       primary: "#373a5b",
       secondary: "#ff9e9e",

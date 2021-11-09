@@ -65,4 +65,7 @@
   .form-input {
     @apply mt-1 mb-3 py-4 px-4 rounded-md text-primary;
   }
+  .bg-grad {
+    @apply bg-gradient-to-r from-gradend via-gradstart to-gradend;
+  }
 }
