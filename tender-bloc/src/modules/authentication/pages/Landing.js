@@ -8,7 +8,6 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
-import Background from "../../../global/assets/images/background.png"
 import Logo from "../../../global/assets/images/logo.png";
 import Illustration from "../../../global/assets/images/illustration.png";
 import Mockup from "../../../global/assets/images/mockup.png";

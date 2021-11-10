@@ -40,7 +40,7 @@ const SignIn = () => {
                 <h3 className="mb-8 text-4xl md:text-5xl font-bold font-heading">
                   Welcome Back
                 </h3>
-                <div>
+                <div className="text-center">
                   <input
                     value={email}
                     type="email"
