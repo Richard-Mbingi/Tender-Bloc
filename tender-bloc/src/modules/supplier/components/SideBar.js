@@ -54,7 +54,7 @@ export const SideBar = () => {
             </div>
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiLogOut />
-              <Link to='/sign-out' onClick={() => logout()}>Sign Out</Link>
+              <Link to='/' onClick={() => logout()}>Sign Out</Link>
             </div>
           </div>
         </div>

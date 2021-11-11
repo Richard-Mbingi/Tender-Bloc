@@ -44,7 +44,7 @@ const SignUp = () => {
                 <h3 className="mb-8 text-4xl md:text-5xl font-bold font-heading">
                   Signing up is super quick
                 </h3>
-                <Link to="/sign-in" className="mb-10 underline">
+                <Link to="/sign-in" className="mb-10 underline hover:text-subtext">
                   Already have an account?
                 </Link>
                 <div>
@@ -69,12 +69,14 @@ const SignUp = () => {
                       Cookies.
                     </span>
                   </label>
-                  <button
-                    onClick={() => signup(email, password, email)}
-                    className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase"
-                  >
-                    Sign Up
-                  </button>
+                  <Link to="/document-registration">
+                    <button
+                      onClick={() => signup(email, password, email)}
+                      className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase"
+                    >
+                      Sign Up
+                    </button>
+                  </Link>
                 </div>
               </div>
               <img
