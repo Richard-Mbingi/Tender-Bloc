@@ -2,7 +2,7 @@ import React from "react";
 
 const TenderCard = () => {
   return (
-    <div className="bg-white font-body text-base rounded-lg p-6 max-w-sm my-2">
+    <div className="card-template">
       <div className="grid grid-cols-2">
         <img src="" alt="company-logo" />
         <h4 className="text-2xl">TENDER TITLE</h4>

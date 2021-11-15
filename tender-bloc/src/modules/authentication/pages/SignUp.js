@@ -69,14 +69,12 @@ const SignUp = () => {
                       Cookies.
                     </span>
                   </label>
-                  <Link to="/document-registration">
                     <button
                       onClick={() => signup(email, password, email)}
                       className="mt-12 md:mt-16 bg-red-300 hover:bg-red-400 text-white font-bold font-heading py-5 px-8 rounded-md uppercase"
                     >
                       Sign Up
                     </button>
-                  </Link>
                 </div>
               </div>
               <img

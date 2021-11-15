@@ -18,10 +18,10 @@ const Landing = () => {
       <div className="bg-grad">
         <div className="px-16 py-7 flex items-center justify-between">
           <div className="flex flex-row">
-            <img className="h-12 pr-4" src={Logo} alt="" />
+            <img className="h-12 pr-4 flex items-center" src={Logo} alt="" />
             <p className=" text-3xl font-heading font-semibold">TenderBloc</p>
           </div>
-          <div className="flex flex-row gap-x-8">
+          <div className="flex flex-row gap-x-8 items-center">
             <Link className="primary-link">Home</Link>
             <Link className="primary-link">Discover</Link>
             <Link className="primary-link">Contact Us</Link>
@@ -36,7 +36,7 @@ const Landing = () => {
           <h1 className="text-7xl font-heading mt-12">
             Harness the Power of <br /> the Many
           </h1>
-          <p className=" text-3xl font-body font-extralight mt-10">
+          <p className=" text-3xl font-body font-extralight mt-8">
             Unlock the unlimited potential of the Ethereum technology in your{" "}
             <br />
             Tender Procurement

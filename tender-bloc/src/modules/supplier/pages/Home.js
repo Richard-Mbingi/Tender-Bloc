@@ -1,9 +1,12 @@
+import Category from "../components/Category";
+
 const Home = () => {
   return (
     <>
-      <body>
+      <div>
         <h1 className="dashboard-label">Home</h1>
-      </body>
+        <Category name="Get Started" />
+      </div>
     </>
   );
 };

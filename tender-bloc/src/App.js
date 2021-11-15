@@ -4,7 +4,7 @@ import DashBoard from "./modules/supplier/DashBoard";
 import Landing from "./modules/authentication/pages/Landing";
 import SignIn from "./modules/authentication/pages/SignIn";
 import SignUp from "./modules/authentication/pages/SignUp";
-import DocumentRegistration from "./modules/authentication/pages/DocumentRegistration";
+import DocumentRegistration from "./modules/supplier/pages/DocumentRegistration";
 
 const App = () => {
   const { isAuthenticated } = useMoralis();

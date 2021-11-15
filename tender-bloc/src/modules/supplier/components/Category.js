@@ -1,11 +1,8 @@
-import React from "react";
-import TenderCard from "./TenderCard";
-
-const Category = () => {
+const Category = (props) => {
   return (
     <div className="my-5">
-      <h2 className="font-body text-lg font-medium">Category Name</h2>
-      <TenderCard />
+      <h2 className="sub-heading">{props.name}</h2>
+      {props.children}
     </div>
   );
 };
