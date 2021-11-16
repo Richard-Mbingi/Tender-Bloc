@@ -1,10 +1,11 @@
 import React from 'react'
+import Page from '../components/Page'
 
 const AssetDisposal = () => {
      return (
-          <div className="dashboard-label">
-               <h1>Asset Disposal</h1>
-          </div>
+          <Page name="Asset Disposal">
+               
+          </Page>
      )
 }
 

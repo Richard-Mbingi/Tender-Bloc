@@ -1,10 +1,11 @@
 import React from 'react'
+import Page from '../components/Page'
 
 const Settings = () => {
      return (
-          <div className="dashboard-label">
+          <Page name="Settings">
                <h1>Settings</h1>
-          </div>
+          </Page>
      )
 }
 

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Page from "../components/Page";
+import Category from "../components/Category";
 
 const Prequalification = () => {
-     return (
-          <div className="dashboard-label">
-               <h1>Prequalification</h1>
-          </div>
-     )
-}
+  return (
+    <Page name="Prequalification">
+      <Category name="Home - Document Upload" />
+    </Page>
+  );
+};
 
-export default Prequalification
+export default Prequalification;

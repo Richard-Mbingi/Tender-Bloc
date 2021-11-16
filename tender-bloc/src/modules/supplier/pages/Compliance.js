@@ -1,10 +1,11 @@
 import React from 'react'
+import Page from '../components/Page'
 
 const Compliance = () => {
      return (
-          <div className="dashboard-label">
-               <h1>Compliance</h1>
-          </div>
+          <Page name="Compliance">
+               
+          </Page>
      )
 }
 

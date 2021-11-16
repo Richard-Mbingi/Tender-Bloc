@@ -1,13 +1,20 @@
+import { IoIosAdd } from "react-icons/io";
+import { Link } from "react-router-dom";
 import Category from "../components/Category";
+import Page from "../components/Page";
 
 const Home = () => {
   return (
-    <>
-      <div>
-        <h1 className="dashboard-label">Home</h1>
-        <Category name="Get Started" />
-      </div>
-    </>
+    <Page name="Home">
+      <Category name="Get Started">
+        <Link to="/document-registration">
+          <div className="card-template flex flex-col items-center text-secondary max-w-xs py-10">
+            <IoIosAdd size={45} />
+            <p className="text-lg">Register your Info</p>
+          </div>
+        </Link>
+      </Category>
+    </Page>
   );
 };
 
