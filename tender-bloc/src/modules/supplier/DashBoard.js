@@ -1,3 +1,5 @@
+//TODO: Default switch case 
+
 import { Route, Switch } from "react-router";
 import { SideBar } from "./components/SideBar";
 import Home from "./pages/Home";

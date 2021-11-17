@@ -1,3 +1,4 @@
+import CardList from "../components/CardList";
 import Category from "../components/Category";
 import Page from "../components/Page";
 import TenderCard from "../components/TenderCard";
@@ -6,7 +7,7 @@ const Discover = () => {
   return (
     <Page name="Discover">
       <Category name="Recently added">
-        <TenderCard />
+        <CardList />
       </Category>
     </Page>
   );

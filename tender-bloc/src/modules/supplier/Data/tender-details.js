@@ -21,3 +21,5 @@ const tenderDetails = [
     deadline: "25th October, 2021 – 2200 HRS (CAT)",
   },
 ];
+
+export { tenderDetails };
