@@ -1,4 +1,4 @@
-//TODO: Default switch case 
+//TODO: Default switch case
 
 import { Route, Switch } from "react-router";
 import { SideBar } from "./components/SideBar";
@@ -13,10 +13,8 @@ import { InfoBar } from "./components/InfoBar";
 const DashBoard = () => {
   return (
     <div className=" grid grid-cols-3">
-      <div className="col-span-1 col-end-1">
-        <SideBar />
-      </div>
-      <div className="col-span-3 bg-primary px-8">
+      <SideBar className="col-span-1 col-end-1" />
+      <div className="col-span-3 bg-primary px-8 min-h-screen">
         <InfoBar />
         <Switch>
           <Route path="/home" component={Home} />

@@ -1,23 +1,27 @@
 import React from "react";
 
 const TenderCard = (props) => {
+  const _tenderTitle = props.cardDetails.tenderTitle;
+  const _client = props.cardDetails.client;
+  const _deadline = props.cardDetails.deadline;
+
   return (
     <div className="card-template">
       <div className="grid grid-cols-2">
-        <img src="" alt="company-logo" />
-        <h4 className="text-2xl">{props.cardDetails.tenderTitle}</h4>
+        <img size={10} src="" alt="company-logo" />
+        <h4 className="text-lg">{_tenderTitle}</h4>
       </div>
-      <div className="my-4">
+      <div className="my-2">
         <div className="grid grid-cols-2">
-          <p>Client:</p>
-          <p className="font-light">{props.cardDetails.client}</p>
+          <p className="text-base">Client:</p>
+          <p className="font-light text-sm">{_client}</p>
         </div>
         <div className="grid grid-cols-2">
-          <p>Deadline:</p>
-          <p className="font-light">{props.cardDetails.deadline}</p>
+          <p className="text-base">Deadline:</p>
+          <p className="font-light text-sm">{_deadline}</p>
         </div>
       </div>
-      <div className="space-x-5 text-right mr-7">
+      <div className="absolute right-5 bottom-5 space-x-5 text-right">
         <button className="primary-button">Register</button>
         <button className="primary-button">Bid Instruction</button>
       </div>

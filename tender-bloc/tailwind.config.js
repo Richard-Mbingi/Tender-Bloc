@@ -19,11 +19,11 @@ module.exports = {
     borderColor: (theme) => ({
       primary: "#ff7e7e",
       secondary: "#373a5b",
-      tertiary: "#ff9e9e"
+      tertiary: "#ff9e9e",
     }),
 
-    gradientColorStops: theme => ({
-      ...theme('colors'),
+    gradientColorStops: (theme) => ({
+      ...theme("colors"),
       gradstart: "#1C3452",
       gradend: "#2A243D",
     }),

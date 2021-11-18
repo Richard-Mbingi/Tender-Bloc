@@ -52,7 +52,7 @@
     @apply font-light text-lg text-tertiary font-body hover:text-secondary;
   }
   .primary-button {
-    @apply border border-primary rounded-sm px-6 py-2 text-lg text-secondary font-body font-light
+    @apply border border-primary rounded-sm px-6 py-2 text-base text-secondary font-body font-light
     hover:bg-tertiary hover:text-tertiary transition ease-in-out;
   }
   .secondary-button {
@@ -69,9 +69,9 @@
     @apply bg-gradient-to-r from-gradend via-gradstart to-gradend;
   }
   .sub-heading {
-    @apply font-body text-lg font-medium
+    @apply font-body text-lg font-medium;
   }
   .card-template {
-    @apply bg-white font-body text-base rounded-lg p-6 max-w-sm my-2 hover:shadow-md ease-in-out duration-300
+    @apply bg-white relative font-body text-base h-64 min-h-full w-5/12 rounded-lg p-6 my-2 hover:shadow-md ease-in-out duration-300;
   }
 }

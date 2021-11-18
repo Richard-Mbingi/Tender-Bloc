@@ -15,7 +15,7 @@ export const SideBar = () => {
   const { logout } = useMoralis();
   return (
     <>
-      <div className="bg-secondary flex flex-col text-tertiary">
+      <div className="fixed bg-secondary flex flex-col text-tertiary">
         <div className="flex flex-row border-b border-gray-500 p-5 pr-10">
           <img src={logoImg} alt="" className="h-10 pr-2" />
           <p className="self-center font-heading text-2xl font-semibold ">
