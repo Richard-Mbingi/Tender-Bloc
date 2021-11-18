@@ -3,7 +3,7 @@ import TenderCard from "./TenderCard";
 import { tenderDetails } from "../data/tender-details";
 
 const CardList = () => (
-  <ul className="flex flex-wrap min-w-full space-x-4 flex-row ">
+  <ul className="flex flex-wrap min-w-full space-x-5 flex-row ">
     {tenderDetails.map((card) => {
       return <TenderCard cardDetails={card} />;
     })}
