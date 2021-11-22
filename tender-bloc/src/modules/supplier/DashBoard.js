@@ -1,6 +1,6 @@
 //TODO: Default switch case
 
-import { Route, Switch } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import { SideBar } from "./components/SideBar";
 import Home from "./pages/Home";
 import Discover from "./pages/Discover";
@@ -16,14 +16,14 @@ const DashBoard = () => {
       <SideBar className="col-span-1 col-end-1" />
       <div className="col-span-3 bg-primary px-8 min-h-screen">
         <InfoBar />
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/discover" component={Discover} />
-          <Route path="/prequalification" component={Prequalification} />
-          <Route path="/compliance" component={Compliance} />
-          <Route path="/asset-disposal" component={AssetDisposal} />
-          <Route path="/settings" component={Settings} />
-        </Switch>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/prequalification" element={<Prequalification />} />
+          <Route path="/compliance" element={<Compliance />} />
+          <Route path="/asset-disposal" element={<AssetDisposal />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
       </div>
     </div>
   );

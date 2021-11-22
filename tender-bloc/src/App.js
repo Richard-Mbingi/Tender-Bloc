@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router";
+import {Routes, Route } from "react-router-dom";
 import { useMoralis } from "react-moralis";
 import DashBoard from "./modules/supplier/DashBoard";
 import Landing from "./modules/authentication/pages/Landing";
@@ -13,11 +13,11 @@ const App = () => {
   }
   return (
     <div>
-      <Switch>
+      <Routes>
         <Route path="/" exact component={Landing} />
         <Route path="/sign-in" component={SignIn} />
         <Route path="/sign-up" component={SignUp} />
-      </Switch>
+      </Routes>
     </div>
   );
 };
