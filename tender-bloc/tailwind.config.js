@@ -34,6 +34,7 @@ module.exports = {
       tertiary: "#ffffff",
       subheading: "#676a8b",
       subtext: "#86A0C7",
+      transparent: "#eeeff7"
     },
   },
   variants: {

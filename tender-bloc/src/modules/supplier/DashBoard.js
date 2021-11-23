@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { SideBar } from "./components/SideBar";
 import Home from "./pages/Home";
 import Discover from "./pages/Discover";
+import DocumentRegistration from "./pages/DocumentRegistration";
 import Prequalification from "./pages/Prequalification";
 import Compliance from "./pages/Compliance";
 import AssetDisposal from "./pages/AssetDisposal";
@@ -23,6 +24,7 @@ const DashBoard = () => {
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/asset-disposal" element={<AssetDisposal />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/document-registration" element={<DocumentRegistration />} />
         </Routes>
       </div>
     </div>

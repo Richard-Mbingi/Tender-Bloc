@@ -62,6 +62,9 @@
   .primary-link {
     @apply font-light text-lg text-tertiary font-body hover:text-secondary;
   }
+  .secondary-link {
+    @apply font-medium text-subtext hover:text-primary;
+  }
   .primary-button {
     @apply border border-primary rounded-sm px-6 py-2 text-base text-secondary font-body font-light
     hover:bg-tertiary hover:text-tertiary transition ease-in-out;
