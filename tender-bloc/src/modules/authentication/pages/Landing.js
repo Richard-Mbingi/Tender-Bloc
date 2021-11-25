@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RiShieldCheckLine } from "react-icons/ri";
 import { BiReceipt } from "react-icons/bi";
 import {
@@ -22,12 +22,12 @@ const Landing = () => {
             <p className=" text-3xl font-heading font-semibold">TenderBloc</p>
           </div>
           <div className="flex flex-row gap-x-8 items-center">
-            <Link className="primary-link">Home</Link>
-            <Link className="primary-link">Discover</Link>
-            <Link className="primary-link">Contact Us</Link>
-            <Link to="/sign-in">
+            <NavLink to="/" className="primary-link">Home</NavLink>
+            <NavLink to="/" className="primary-link">Discover</NavLink>
+            <NavLink to="/" className="primary-link">Contact Us</NavLink>
+            <NavLink to="/sign-in">
               <button className="primary-button">Sign In</button>
-            </Link>
+            </NavLink>
           </div>
         </div>
 
@@ -192,16 +192,16 @@ const Landing = () => {
             <h2 className="font-heading text-2xl font-semibold text-subtext">
               Service Portals
             </h2>
-            <Link className="primary-link">Forgot Password</Link>
-            <Link className="primary-link">Admin Portal</Link>
-            <Link className="primary-link">Need Help</Link>
+            <Link to="/" className="primary-link">Forgot Password</Link>
+            <Link to="/" className="primary-link">Admin Portal</Link>
+            <Link to="/" className="primary-link">Need Help</Link>
           </div>
           <div className="flex flex-col">
             <h2 className="font-heading text-2xl font-semibold text-subtext">
               Terms & Conditions
             </h2>
-            <Link className="primary-link">Terms of Service</Link>
-            <Link className="primary-link">FAQs</Link>
+            <Link to="/" className="primary-link">Terms of Service</Link>
+            <Link to="/" className="primary-link">FAQs</Link>
           </div>
         </div>
         <div className="grid justify-items-center">

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { BsArrowLeft, BsCloudDownload } from "react-icons/bs";
+import { BsCloudDownload } from "react-icons/bs";
 import DocumentList from "../components/DocumentList";
 
 const DocumentUpload = () => {
