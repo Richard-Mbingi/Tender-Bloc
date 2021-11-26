@@ -23,10 +23,10 @@ export const SideBar = () => {
           </p>
         </div>
         <div className="py-6">
-          <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
-            Main
-          </h1>
           <div className=" h-screen flex flex-col font-body font-light text-lg">
+            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
+              Main
+            </h1>
             <div className="side-bar-tab">
               <FiLayout />
               <Link to="/home">Home</Link>
@@ -39,22 +39,28 @@ export const SideBar = () => {
               <FiFileText />
               <Link to="/prequalification">Prequalification</Link>
             </div>
+            <span className="h-16" />
+            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
+              Tender Notice
+            </h1>
             <div className="side-bar-tab">
-              <FiCheckSquare />
-              <Link to="/compliance">Compliance</Link>
+              <FiLayout />
+              <Link to="/">Open Tender</Link>
             </div>
             <div className="side-bar-tab">
-              <FiCreditCard />
-              <Link to="/asset-disposal">Asset Disposal</Link>
+              <AiOutlineFileSearch />
+              <Link to="/">Closed Tender</Link>
             </div>
-            <span className="h-60" />
+            <span className="h-24" />
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiSettings />
               <Link to="/settings">Settings</Link>
             </div>
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiLogOut />
-              <Link to='/' onClick={() => logout()}>Sign Out</Link>
+              <Link to="/" onClick={() => logout()}>
+                Sign Out
+              </Link>
             </div>
           </div>
         </div>

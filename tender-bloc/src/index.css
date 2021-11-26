@@ -25,19 +25,24 @@
       format("ttf");
 }
 @font-face {
-  font-family: Source Sans Pro;
-  font-weight: 500;
-  src: local("Source Sans Pro"),
-    url(./global/assets/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf)
-      format("ttf");
+  font-family: Outfit;
+  font-weight: 200;
+  src: local("Outfit"),
+    url(./global/assets/fonts/outfit/Outfit-ExtraLight.ttf) format("ttf");
 }
 
 @font-face {
-  font-family: Source Sans Pro;
+  font-family: Outfit;
+  font-weight: 300;
+  src: local("Outfit"),
+    url(./global/assets/fonts/outfit/Outfit-Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: Outfit;
   font-weight: 500;
   src: local("Source Sans Pro"),
-    url(./global/assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf)
-      format("ttf");
+    url(./global/assets/fonts/outfit/Outfit-Regular.ttf) format("ttf");
 }
 
 @layer components {

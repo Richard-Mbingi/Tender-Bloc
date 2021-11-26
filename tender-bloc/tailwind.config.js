@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: ["Darker Grotesque"],
-        body: ["Source Sans Pro"],
+        body: ["Outfit"],
       },
     },
 
