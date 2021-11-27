@@ -17,8 +17,8 @@ export const SideBar = () => {
         </div>
         <div className="py-2">
           <div className=" h-screen flex flex-col font-body font-light text-lg">
-            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
-              Main
+            <h1 className="pl-5 font-body font-normal text-xl text-rhythm">
+              MAIN
             </h1>
             <div className="side-bar-tab">
               <FiLayout />
@@ -33,8 +33,8 @@ export const SideBar = () => {
               <Link to="/prequalification">Prequalification</Link>
             </div>
             <span className="h-8" />
-            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
-              Tender Notice
+            <h1 className="pl-5 font-body font-normal text-xl text-rhythm">
+              TENDER NOTICE
             </h1>
             <div className="side-bar-tab">
               <FiLayout />
@@ -49,8 +49,8 @@ export const SideBar = () => {
               <Link to="/closed-tenders">Closed Tenders</Link>
             </div>
             <span className="h-8" />
-            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
-              Asset Disposal
+            <h1 className="pl-5 font-body font-normal text-xl text-rhythm">
+              ASSET DISPOSAL
             </h1>
             <div className="side-bar-tab">
               <FiLayout />

@@ -11,7 +11,7 @@ const ProgressRing = (props) => {
             cy="100"
             fill="transparent"
             stroke={props.backgroundColor}
-            strokeWidth="0.5rem"
+            strokeWidth="0.75rem"
             strokeDasharray="439.8"
             strokeDashoffset="0"
           />
@@ -21,16 +21,16 @@ const ProgressRing = (props) => {
             cy="100"
             fill="transparent"
             stroke={props.color}
-            strokeWidth="0.5rem"
+            strokeWidth="0.75rem"
             strokeDasharray="360"
             strokeDashoffset={props.percentage}
           />
         </g>
-        <text x="50%" y="50%" dominantBaseline="central" textAnchor="middle">
-          85%
+        <text className="text-2xl font-body" x="50%" y="50%" dominantBaseline="central" textAnchor="middle">
+          {props.percentage}
         </text>
       </svg>
-      <p className="">{props.name}</p>
+      <p className="font-body text-sm">{props.name}</p>
     </div>
   );
 };
