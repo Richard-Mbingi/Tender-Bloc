@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import { useMoralis } from "react-moralis";
-import {
-  FiLayout,
-  FiCheckSquare,
-  FiCreditCard,
-  FiSettings,
-  FiLogOut,
-  FiFileText,
-} from "react-icons/fi";
+import { FiLayout, FiSettings, FiLogOut, FiFileText } from "react-icons/fi";
 import { AiOutlineFileSearch } from "react-icons/ai";
 import logoImg from "../../../global/assets/images/logo.png";
 
@@ -15,14 +8,14 @@ export const SideBar = () => {
   const { logout } = useMoralis();
   return (
     <>
-      <div className="fixed bg-secondary flex flex-col text-tertiary">
-        <div className="flex flex-row border-b border-gray-500 p-5 pr-10">
+      <div className="fixed flex flex-col text-tertiary bg-white rounded-r-xl">
+        <div className="flex flex-row p-5 pr-10">
           <img src={logoImg} alt="" className="h-10 pr-2" />
           <p className="self-center font-heading text-2xl font-semibold ">
             TenderBloc
           </p>
         </div>
-        <div className="py-6">
+        <div className="py-2">
           <div className=" h-screen flex flex-col font-body font-light text-lg">
             <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
               Main
@@ -39,19 +32,31 @@ export const SideBar = () => {
               <FiFileText />
               <Link to="/prequalification">Prequalification</Link>
             </div>
-            <span className="h-16" />
+            <span className="h-8" />
             <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
               Tender Notice
             </h1>
             <div className="side-bar-tab">
               <FiLayout />
-              <Link to="/">Open Tender</Link>
+              <Link to="/open-tenders">Open Tenders</Link>
             </div>
             <div className="side-bar-tab">
               <AiOutlineFileSearch />
-              <Link to="/">Closed Tender</Link>
+              <Link to="/post-qualification">Post Qualification</Link>
             </div>
-            <span className="h-24" />
+            <div className="side-bar-tab">
+              <AiOutlineFileSearch />
+              <Link to="/closed-tenders">Closed Tenders</Link>
+            </div>
+            <span className="h-8" />
+            <h1 className="pl-5 font-body font-normal text-2xl text-subheading">
+              Asset Disposal
+            </h1>
+            <div className="side-bar-tab">
+              <FiLayout />
+              <Link to="/financials">Financials</Link>
+            </div>
+            <span className="h-12" />
             <div className="side-bar-tab hover:bg-transparent hover:text-secondary">
               <FiSettings />
               <Link to="/settings">Settings</Link>

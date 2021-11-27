@@ -12,6 +12,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme("colors"),
       primary: "#eeeff7",
+      magnolia: "#f2f2ff",
       secondary: "#373a5b",
       tertiary: "#ff7e7e",
     }),
@@ -29,12 +30,13 @@ module.exports = {
     }),
 
     textColor: {
-      primary: "#373a5b",
-      secondary: "#ff9e9e",
-      tertiary: "#ffffff",
-      subheading: "#676a8b",
-      subtext: "#86A0C7",
-      transparent: "#eeeff7"
+      sienna: "#f57e5e",
+      lcoral: "#f79393",
+      bcoral: "#ff7e7e",
+      aquamarine: "#55d99d",
+      han: "#5e71cd",
+      rhythm: "#7d80a2",
+      space: "#373a5b",
     },
   },
   variants: {

@@ -58,31 +58,31 @@
   }
 
   .side-bar-tab {
-    @apply pl-9 space-x-3 py-2 flex flex-row items-center
-    hover:bg-red-300 hover:text-primary transition ease-in-out duration-100;
+    @apply pl-9 space-x-3 px-6 py-2 flex flex-row items-center
+    hover:text-lcoral transition ease-in-out duration-100;
   }
   .dashboard-label {
     @apply font-heading text-5xl;
   }
   .primary-link {
-    @apply font-light text-lg text-tertiary font-body hover:text-secondary;
+    @apply font-light text-lg text-han font-body hover:text-lcoral;
   }
   .secondary-link {
-    @apply font-medium text-subtext hover:text-primary;
+    @apply font-medium text-space hover:text-han;
   }
   .primary-button {
-    @apply border border-primary rounded-sm px-6 py-2 text-base text-secondary font-body font-light
-    hover:bg-tertiary hover:text-tertiary transition ease-in-out;
+    @apply border border-primary rounded-sm px-6 py-2 text-base text-bcoral font-body font-light
+    hover:bg-tertiary hover:text-aquamarine transition ease-in-out;
   }
   .secondary-button {
-    @apply border border-secondary rounded-sm px-6 py-2 text-lg text-primary font-body font-light
-    hover:bg-secondary hover:text-tertiary transition ease-in-out;
+    @apply border border-secondary rounded-sm px-6 py-2 text-lg text-aquamarine font-body font-light
+    hover:bg-secondary hover:text-rhythm transition ease-in-out;
   }
   .form-label {
     @apply flex flex-col;
   }
   .form-input {
-    @apply mt-1 mb-3 py-4 px-4 rounded-md text-primary;
+    @apply mt-1 mb-3 py-4 px-4 rounded-md text-space;
   }
   .bg-grad {
     @apply bg-gradient-to-r from-gradend via-gradstart to-gradend;
