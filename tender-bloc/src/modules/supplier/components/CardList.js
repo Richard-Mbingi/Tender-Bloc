@@ -4,8 +4,8 @@ import { tenderDetails } from "../data/tender-details";
 
 const CardList = () => (
   <ul className="flex overflow-y-hidden overflow-x-scroll space-x-5 ">
-    {tenderDetails.map((card) => {
-      return <TenderCard cardDetails={card} key={card} />;
+    {tenderDetails.map((_card) => {
+      return <TenderCard cardDetails={_card} key={_card} />;
     })}
   </ul>
 

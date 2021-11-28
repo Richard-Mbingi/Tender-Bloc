@@ -7,7 +7,7 @@ const Prequalification = () => {
   return (
     <Page name="Prequalification">
       <Category name="Home - Document Upload" />
-      <div className="bg-white p-6 rounded-md">
+      <div className="table-template">
         <PrequalificationTable />
       </div>
     </Page>
