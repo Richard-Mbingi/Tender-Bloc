@@ -1,9 +1,9 @@
 import React from 'react'
 
-const OpenTender = (props) => {
+const OpenTender = () => {
      return (
           <div>
-               {props.children}
+               
           </div>
      )
 }

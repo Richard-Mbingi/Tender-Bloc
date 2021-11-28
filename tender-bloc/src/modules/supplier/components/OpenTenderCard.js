@@ -2,16 +2,17 @@ import React from "react";
 import ProgressRing from "./ProgressRing";
 
 const OpenTenderCard = (props) => {
+
+  const _tenderTitle= props.cardDetails.tenderTitle
+  const _companyTitle= props.cardDetails.companyTitle
+
   return (
-    <div
-      to="/"
-      className="bg-white my-4 mx-12 shadow-md rounded-xl grid grid-cols-2 place-items-center"
-    >
+    <div className="bg-white my-4 mx-12 shadow-md rounded-xl grid grid-cols-2 place-items-center">
       <div className="grid grid-cols-2">
         <img src="/" alt="company-logo" />
         <div className="text-rhythm">
-          <h2 className="font-body text-3xl font-light">Tender Name</h2>
-          <p>Company Name</p>
+          <h2 className="font-body text-3xl font-light">{_tenderTitle}</h2>
+          <p>{_companyTitle}</p>
         </div>
       </div>
       <div className="grid grid-cols-3 place-items-center">
