@@ -4,8 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import { SideBar } from "./components/SideBar";
 import Home from "./pages/Home";
 import Discover from "./pages/Discover";
+import DocumentRegistration from "./pages/DocumentRegistration";
 import OpenTenders from "./pages/OpenTenders";
-import OpenTender from "./pages/OpenTender";
 import ClosedTenders from "./pages/ClosedTenders";
 import Prequalification from "./pages/Prequalification";
 import PostQualification from "./pages/PostQualification";
@@ -21,10 +21,15 @@ const DashBoard = () => {
         <InfoBar />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route
+            path="/home/document-registration"
+            element={<DocumentRegistration />}
+          >
+            <Route path="document-name" />
+          </Route>
           <Route path="/discover" element={<Discover />} />
           <Route path="/prequalification" element={<Prequalification />} />
           <Route path="/open-tenders" element={<OpenTenders />} />
-          <Route path="/open-tenders/:openTenderId" element={<OpenTender />} />
           <Route path="/post-qualification" element={<PostQualification />} />
           <Route path="/closed-tenders" element={<ClosedTenders />} />
           <Route path="/financials" element={<Financials />} />

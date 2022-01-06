@@ -30,6 +30,7 @@ module.exports = {
     }),
 
     textColor: {
+      magnolia: "#f2f2ff",
       sienna: "#f57e5e",
       lcoral: "#f79393",
       bcoral: "#ff7e7e",

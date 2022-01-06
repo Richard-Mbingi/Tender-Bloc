@@ -75,7 +75,7 @@
     hover:bg-tertiary hover:text-aquamarine transition ease-in-out;
   }
   .secondary-button {
-    @apply border border-secondary rounded-sm px-6 py-2 text-lg text-aquamarine font-body font-light
+    @apply border border-secondary rounded-sm px-6 py-2 text-lg text-space font-body font-light
     hover:bg-secondary hover:text-rhythm transition ease-in-out;
   }
   .form-label {

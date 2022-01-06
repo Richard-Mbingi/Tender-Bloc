@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Page name="Home">
       <Category name="Get Started">
-        <Link to="/document-registration">
+        <Link to="/home/document-registration">
           <div className="card-template max-h-40 flex flex-col items-center text-secondary max-w-xs py-10">
             <IoIosAdd size={45} />
             <p className="text-lg">Register your Info</p>
