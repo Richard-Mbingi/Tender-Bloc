@@ -2,3 +2,8 @@ export { default as SignIn } from "./SignIn";
 export { default as SideBar } from "./SideBar";
 export { default as UserProfile } from "./UserProfile";
 export { default as Landing } from "./Landing";
+export { default as Feed } from "./Feed";
+export { default as Search } from "./Search";
+export { default as TenderDetail } from "./TenderDetail";
+export { default as Navbar } from "./Navbar";
+export { default as CreateTender } from "./CreateTender";
