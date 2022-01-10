@@ -13,7 +13,6 @@ const SignIn = () => {
 
   //*fetch user sign-in info from google response
   const responseGoogle = (response) => {
-    console.log(response.profileObj)
     localStorage.setItem("user", JSON.stringify(response.profileObj));
 
     const { name, googleId, imageUrl } = response.profileObj;
@@ -91,13 +90,13 @@ const SignIn = () => {
       >
         <div className="flex sm:w-1/2 xl:w-3/5 flex-col gap-10">
           <h1 className="text-5xl font-mono font-medium text-white">
-            Join our Community
+            Let Us Do the
             <br />
-            of Procuring Entities
+            Heavy Lifting for You
           </h1>
           <p className="text-white font-light">
-            List your services and get connected to the <br /> perfect suppliers
-            for your business / organization
+            Unlock the unlimited potential of the Ethereum technology in your
+            Tender Procurement
           </p>
         </div>
       </div>
