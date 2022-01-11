@@ -8,8 +8,8 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
   if (!user) return null;
 
   return (
-    <div className="flex gap-2 md:gap-5 w-full mt-5 pb-7">
-      <div className="flex justify-start items-center w-full rounded-md bg-white border-none focus-within:shadow-sm">
+    <div className="flex gap-2 md:gap-5 w-full mt-5 pb-7 justify-end">
+      <div className="flex items-center pl-5 w-80 rounded-md bg-white border-none focus-within:shadow-sm">
         <IoMdSearch fontSize={21} className="ml-1" />
         <input
           type="text"
@@ -26,7 +26,10 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
         </Link>
       </div>
       <div className="flex gap-3">
-        <Link to={`user-profile/${user?._id}`} className="bg-black text-white rounded-lg w-12 h-12 md:w-14 md:h-12 flex justify-center items-center">
+        <Link
+          to=""
+          className="bg-black text-white rounded-lg w-12 h-12 md:w-14 md:h-12 flex justify-center items-center"
+        >
           <IoMdAdd />
         </Link>
       </div>

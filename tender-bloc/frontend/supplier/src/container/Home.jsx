@@ -8,16 +8,14 @@ import Tenders from "./Tenders";
 import { userQuery } from "../utils/data";
 import { client } from "../client";
 import logo from "../assets/image/logo.png";
+import { fetchUser } from "../utils/fetchUser";
 
 const Home = () => {
   const [toggleSidebar, setToggleSidebar] = useState(false);
   const [user, setUser] = useState(null);
   const scrollRef = useRef(null);
 
-  const userInfo =
-    localStorage.getItem("user") !== "undefined"
-      ? JSON.parse(localStorage.getItem("user"))
-      : localStorage.clear();
+  const userInfo = fetchUser()
 
   useEffect(() => {
     const query = userQuery(userInfo?.googleId);
@@ -32,7 +30,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex bg-gray-50 md:flex-row flex-col transaction-height duration-75 ease-out">
+    <div className="flex bg-indigo-50 md:flex-row flex-col transaction-height duration-75 ease-out">
       <div className="hidden md:flex h-screen flex-initial">
         <SideBar user={user && user} />
       </div>
@@ -63,7 +61,10 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="pb-2 flex h-screen overflow-y-scroll" ref={scrollRef}>
+      <div
+        className="pb-2 flex h-screen overflow-y-scroll w-full"
+        ref={scrollRef}
+      >
         <Routes>
           <Route path="/user-profile/:userId" element={<UserProfile />} />
           <Route path="/*" element={<Tenders user={user && user} />} />

@@ -2,13 +2,14 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { RiHomeFill } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
+import { useGoogleLogout } from "react-google-login";
 
 import logo from "../assets/image/logo.png";
 
 const isNotActiveStyle =
-  "flex items-center px-5 gap-3 text-gray-500 hover:text-black transition-all duration-200 ease-in-out capitalize";
+  "flex items-center px-5 gap-3 text-indigo-600 hover:text-red-400 transition-all duration-200 ease-in-out capitalize";
 const isActiveStyle =
-  "flex items-center px-5 gap-3 font-extrabold border-r-2 border-black transition-all duration-200 ease-in-out capitalize";
+  "flex items-center px-5 gap-3 text-red-400 font-bold border-r-2 border-red-400 transition-all duration-200 ease-in-out capitalize";
 
 const categories = [
   { name: "Technology" },
@@ -23,10 +24,10 @@ const SideBar = ({ user, closeToggle }) => {
   };
 
   return (
-    <div className="flex flex-col justify-between bg-white h-full overflow-y-scroll min-w-full">
+    <div className="flex flex-col justify-between bg-white rounded-r-xl h-full overflow-y-scroll w-72 min-w-full pl-4">
       <div className="flex flex-col">
         <Link
-          to="/home"
+          to="/"
           className="flex px-5 gap-2 my-6 pt-1 w-96 items-center"
           onClick={handleCloseSidebar}
         >
@@ -34,7 +35,7 @@ const SideBar = ({ user, closeToggle }) => {
         </Link>
         <div className="flex flex-col gap-5">
           <NavLink
-            to="/home"
+            to="/"
             className={({ isActive }) =>
               isActive ? isActiveStyle : isNotActiveStyle
             }
@@ -43,7 +44,7 @@ const SideBar = ({ user, closeToggle }) => {
             <RiHomeFill />
             Home
           </NavLink>
-          <h3 className="mt-2 px-5 text-base 2xl:text-xl">
+          <h3 className="mt-2 px-5 text-xl font-semibold text-slate-500 2xl:text-xl">
             Discover Categories
           </h3>
           {categories.slice(0, categories.length - 1).map((category) => (
