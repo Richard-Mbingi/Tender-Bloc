@@ -27,7 +27,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
       </div>
       <div className="flex gap-3">
         <Link
-          to=""
+          to="/create-tender"
           className="bg-black text-white rounded-lg w-12 h-12 md:w-14 md:h-12 flex justify-center items-center"
         >
           <IoMdAdd />
