@@ -37,39 +37,63 @@ const TenderDetail = ({ user }) => {
   if (!tenderDetail) return <Spinner message="Loading Tenders" />;
 
   return (
-    <div
-      className="felx xl:flex-row flex-col m-auto bg-white"
-      style={{ maxWidth: "1500px", borderRadius: "32px" }}
-    >
-      <div className="flex justify-center items-center md:items-start flex-initial">
-        <img
-          src={tenderDetail?.image && urlFor(tenderDetail.image).url()}
-          className="rounded-t-3xl rounde-b-lg"
-          alt="user-post"
-        />
-      </div>
-      <div className="w-full p-5 flex-1 xl:min-w-full">
-        <div className="flex items-center justify-between">
-          <div className="flex gap-2 items-center ">
-            <a
-              href={`${tenderDetail.image?.asset?.url}?dl=`}
-              download
-              onClick={(e) => e.stopPropagation()}
-              className="bg-white w-9 h-9 rounded-full flex items-center justify-center text-black text-xl opacity-75 hover:opacity-100 hover:shadow-md outline-none"
+    <>
+      <div
+        className="felx xl:flex-row flex-col m-auto bg-white"
+        style={{ maxWidth: "1500px", borderRadius: "32px" }}
+      >
+        <div className="flex justify-center items-center md:items-start flex-initial">
+          <img
+            src={tenderDetail?.image && urlFor(tenderDetail.image).url()}
+            className="rounded-t-3xl rounde-b-lg"
+            alt="user-post"
+          />
+        </div>
+        <div className="w-full p-5 flex-1 xl:min-w-full">
+          <div className="flex items-center justify-between">
+            <div className="flex gap-2 items-center ">
+              <a
+                href={`${tenderDetail.image?.asset?.url}?dl=`}
+                download
+                onClick={(e) => e.stopPropagation()}
+                className="bg-white w-9 h-9 rounded-full flex items-center justify-center text-black text-xl opacity-75 hover:opacity-100 hover:shadow-md outline-none"
+              >
+                <MdDownloadForOffline />
+              </a>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold break-words mt-3">
+                {tenderDetail.title}
+              </h1>
+              <p className="mt-3">{tenderDetail.about}</p>
+            </div>
+            <Link
+              to={`user-profile/${tenderDetail.postedBy?._id}`}
+              className="flex gap-2 mt-2 items-center"
             >
-              <MdDownloadForOffline />
-            </a>
+              <img
+                className="w-8 h-8 rounded-full object-cover"
+                src={tenderDetail.postedBy?.image}
+                alt="user-profile"
+              />
+              <p className="font-semibold capitalize">
+                {tenderDetail.postedBy?.userName}
+              </p>
+            </Link>
           </div>
-          <div>
-               <h1 className="text-4xl font-bold break-words mt-3">
-                    {tenderDetail.title}
-               </h1>
-               <p className="mt-3">{tenderDetail.about}</p>
-          </div>
-          <Link></Link>
         </div>
       </div>
-    </div>
+      {tenders?.length > 0 ? (
+        <>
+          <h2 className="text-center font-bold text-2xl mt-8 mb-4 ">
+            More like This
+          </h2>
+          <HorizontalLayout tenders={tenders} />
+        </>
+      ) : (
+        <Spinner message="Loading more pins..." />
+      )}
+    </>
   );
 };
 
