@@ -153,3 +153,53 @@ export const feedQuery = `*[_type == 'tender'] | order(_createdAt desc) {
     }`;
     return query;
   };
+
+  export const userCreatedTendersQuery = (userId) => {
+    const query = `*[ _type == 'tender' && userId == '${userId}'] | order(_createdAt desc){
+      image{
+        asset->{
+          url
+        }
+      },
+      _id,
+      destination,
+      postedBy->{
+        _id,
+        userName,
+        image
+      },
+      save[]{
+        postedBy->{
+          _id,
+          userName,
+          image
+        },
+      },
+    }`;
+    return query;
+  };
+
+  export const userSavedTendersQuery = (userId) => {
+    const query = `*[_type == 'tender' && '${userId}' in save[].userId ] | order(_createdAt desc) {
+      image{
+        asset->{
+          url
+        }
+      },
+      _id,
+      destination,
+      postedBy->{
+        _id,
+        userName,
+        image
+      },
+      save[]{
+        postedBy->{
+          _id,
+          userName,
+          image
+        },
+      },
+    }`;
+    return query;
+  };
